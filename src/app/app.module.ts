@@ -6,12 +6,16 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { HighlightDirective } from './highlight.directive';
 import { UnlessDirective } from './unless.directive';
+import { LikeComponent } from './like.component';
+import { VoteComponent } from './vote.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HighlightDirective,
-    UnlessDirective
+    UnlessDirective,
+    LikeComponent,
+    VoteComponent
   ],
   imports: [
     BrowserModule,

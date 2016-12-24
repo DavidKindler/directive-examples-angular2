@@ -36,6 +36,15 @@
         <h2>Unless Directive</h2>
         <div *unless="switch">Conditional Text</div>
 
+        <hr>
+
+        <vote [voteCount]="post.voteCount" [myVote]="post.myVote" (vote)="onVote($event)">
+            VOTE
+        </vote>
+
+        <hr>
+        <like [totalLikes]="tweet.totalLikes" [iLike]="tweet.iLike"></like>
+
 
     </div>
 </div>
